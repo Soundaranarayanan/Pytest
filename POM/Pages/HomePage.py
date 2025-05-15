@@ -11,6 +11,8 @@ class HomePage:
     def enter_product_into_search_box_field_name(self, product_name):
         self.driver.find_element(By.NAME,self.search_box_field_name).click()
         self.driver.find_element(By.NAME,self.search_box_field_name).clear()
+
+        
         self.driver.find_element(By.NAME,self.search_box_field_name).send_keys(product_name)
 
     def click_search_button(self):
